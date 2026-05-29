@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- ============== 基本身份 ============== -->
+    <key>CFBundleDevelopmentRegion</key>
+    <string>zh_CN</string>
+    <key>CFBundleExecutable</key>
+    <string>$(EXECUTABLE_NAME)</string>
+    <key>CFBundleIdentifier</key>
+    <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+    <key>CFBundleName</key>
+    <string>$(PRODUCT_NAME)</string>
+    <key>CFBundleDisplayName</key>
+    <string>ClipBlue</string>
+    <key>CFBundlePackageType</key>
+    <string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.0.0</string>
+    <key>CFBundleVersion</key>
+    <string>1</string>
+
+    <!-- ============== 关键配置 ============== -->
+    
+    <!-- 隐藏 Dock 图标，App 仅以菜单栏图标形式存在 -->
+    <key>LSUIElement</key>
+    <true/>
+
+    <!-- 最低系统版本（与 Xcode Deployment Target 一致即可） -->
+    <key>LSMinimumSystemVersion</key>
+    <string>14.0</string>
+
+    <!-- 高分屏支持 -->
+    <key>NSHighResolutionCapable</key>
+    <true/>
+
+    <!-- App 分类（工具类） -->
+    <key>LSApplicationCategoryType</key>
+    <string>public.app-category.utilities</string>
+
+    <!-- 主 Storyboard 不使用（纯 SwiftUI + AppKit 代码创建） -->
+    <key>NSMainNibFile</key>
+    <string></string>
+    <key>NSPrincipalClass</key>
+    <string>NSApplication</string>
+
+    <!-- ============== 权限使用说明 ============== -->
+    <!-- macOS 在请求辅助功能权限时会显示此说明 -->
+    <key>NSAppleEventsUsageDescription</key>
+    <string>ClipBlue 需要使用辅助功能以注册全局快捷键 ⌘+Shift+V，方便您快速调出剪贴板历史。</string>
+</dict>
+</plist>
