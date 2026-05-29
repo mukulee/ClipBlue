@@ -3,6 +3,10 @@
 > macOS 原生剪贴板历史管理工具——你的剪贴板，不再只能记住最后一条。
 
 <p align="center">
+  <img src="assets/cover.png" alt="ClipBlue 封面" width="600">
+</p>
+
+<p align="center">
   <img src="https://img.shields.io/badge/platform-macOS%2014%2B-blue" alt="platform">
   <img src="https://img.shields.io/badge/language-Swift%205.9-orange" alt="language">
   <img src="https://img.shields.io/badge/version-1.0.0-lightgrey" alt="version">
